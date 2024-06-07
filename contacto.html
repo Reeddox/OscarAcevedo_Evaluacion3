@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/firebase.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><img class="logo" src="imagenes/Ruby_Rose_Emblem.png" alt="e"></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="https://www.crunchyroll.com/es/series/GRNQJM89R/rwby">Serie Original</a></li>
+            <li><a href="https://www.crunchyroll.com/es/series/GVDHX8JP2/rwby-ice-queendom">Serie Ice Queendom</a></li>
+            <li><button type="button" onclick="cambiarColor()" class="cambiar">Cambiar Contraste</button></li>
+            <li><button>Cambiar Letra</button></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+
+    <!--Formulario-->
+    <div class="FormA">
+        <div class="Formulario">
+            <h2>Formulario de Contacto</h2>
+            <label for="Nombre">Nombre</label>
+            <div class="A">
+                <input class="inputs" type="text" placeholder="Ingrese su nombre" id="nombre">
+            </div>
+            <label for="Apellido">Apellido</label>
+            <div>
+                <input class="inputs" type="text" placeholder="Ingrese su Apellido" id="apellido">
+            </div>
+            <label for="Email">Email</label>
+            <div class="A">
+                <input class="inputs" type="email" placeholder="Ingrese su Email" id="email">
+            </div>
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <div>
+                <input type="date" id="fechaNacimiento">
+            </div>
+            <label for="Sexo">Sexo</label>
+            <div>
+                <input type="radio" name="sexo" id="Masculino"><label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="Femenino"><label for="femenino">Femenino</label>
+            </div>
+            <label for="Telefono">Telefono</label>
+            <div class="A">
+                <input class="inputs" type="number" placeholder="Ingrese su Telefono" id="telefono">
+            </div>
+            <label for="Asunto">Asunto</label>
+            <div class="A">
+                <select name="opcion" id="opciones">
+                    <option value="Pregunta">Pregunta</option>
+                    <option value="Sugerencia">Sugerencia</option>
+                    <option value="Otros">Otros</option>
+                </select>
+            </div>
+            <label for="Mensaje">Mensaje</label>
+            <div class="A">
+                <textarea id="mensaje" class="inputs" name="Mensaje" cols="30" rows="10" placeholder="Dejenos un mensaje..."></textarea>
+            </div>
+            <label for="Archico">Sube un archivo</label>
+            <div class="A">
+                <input type="file" id="archivo">
+            </div>
+            <br>
+            <div class="A">
+                <button id="btnEnviar">Enviar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
