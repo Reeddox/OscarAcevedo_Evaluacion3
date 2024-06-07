@@ -1,0 +1,79 @@
+.body{
+    background-color: #FCF3F1;
+}
+.navbar{
+    margin: auto;
+    width: auto;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF5733;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #111;
+}
+.logo{
+    width: 42px;
+}
+.TextArea{
+    margin: auto;
+    width: 50%;
+}
+.tabla{
+    margin: auto;
+}
+.images1{
+    width: 370px;
+}
+.images2{
+    width: 300px;
+}
+.images3{
+    width: 242px;
+}
+.images4{
+    width: 300px;
+}
+.video{
+    margin: auto;
+    text-align: center;
+}
+.FormA{
+    padding: 10px;
+    width: 15%;
+    margin: auto;
+    background-color: #FF5733;
+    border-radius: 4px;
+}
+.Formulario{
+    margin: auto;
+}
+.inputs{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px;
+    width: 98.9%;
+}
+footer {
+    background-color: #FF5733;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.logofooter{
+    width: 38px;
+    padding: 10px;
+}
