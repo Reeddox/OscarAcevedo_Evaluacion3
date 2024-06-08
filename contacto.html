@@ -28,7 +28,10 @@
     <div class="FormA">
         <div class="Formulario">
             <h2>Formulario de Contacto</h2>
-            <label for="Nombre">Nombre</label>
+            <div class="A">
+                <h4>Datos Personales</h4>
+            </div>
+                <label for="Nombre">Nombre</label>
             <div class="A">
                 <input class="inputs" type="text" placeholder="Ingrese su nombre" id="nombre">
             </div>
@@ -53,6 +56,22 @@
             <div class="A">
                 <input class="inputs" type="number" placeholder="Ingrese su Telefono" id="telefono">
             </div>
+            <h4>¿Cual es tu personaje favorito?</h4>
+            <div class="A">
+                <input type="checkbox" name="Personaje" value="Ruby Rose"><label for="Ruby">Ruby Rose</label>
+            </div>
+            <div class="A">
+                <input type="checkbox" name="Personaje" value="Yang Xiaolong"><label for="Yang">Yang Xiaolong</label>
+            </div>
+            <div class="A">
+                <input type="checkbox" name="Personaje" value="Weiss Schnee"><label for="Weiss">Weiss Schnee</label>
+            </div>
+            <div class="A">
+                <input type="checkbox" name="Personaje" value="Blake Belladona"><label for="Blake">Blake Belladona</label>
+            </div>
+            <div class="A">
+                <h4>Dejanos un Mensaje!</h4>
+            </div>
             <label for="Asunto">Asunto</label>
             <div class="A">
                 <select name="opcion" id="opciones">
@@ -63,17 +82,33 @@
             </div>
             <label for="Mensaje">Mensaje</label>
             <div class="A">
-                <textarea id="mensaje" class="inputs" name="Mensaje" cols="30" rows="10" placeholder="Dejenos un mensaje..."></textarea>
+                <textarea id="mensaje" class="area" name="Mensaje" cols="30" rows="10" placeholder="Dejenos un mensaje..."></textarea>
             </div>
-            <label for="Archico">Sube un archivo</label>
-            <div class="A">
-                <input type="file" id="archivo">
-            </div>
-            <br>
             <div class="A">
                 <button id="btnEnviar">Enviar</button>
             </div>
         </div>
+    </div>
+
+    <div id="tituloGestion">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Sexo</th>
+                    <th>Telefono</th>
+                    <th>Personaje favorito</th>
+                    <th>Asunto</th>
+                    <th>Mensaje</th>
+                </tr>
+            </thead>
+            <tbody id="tablaDatos">
+
+            </tbody>
+        </table>
     </div>
 </body>
 </html>

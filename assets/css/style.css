@@ -69,9 +69,12 @@ li a:hover{
     margin: auto;
     text-align: center;
 }
+.A{
+    margin-bottom: 15px;
+}
 .FormA{
     padding: 10px;
-    width: 15%;
+    width: 350px;
     margin: auto;
     background-color: #FF5733;
     border-radius: 4px;
@@ -82,8 +85,25 @@ li a:hover{
 .inputs{
     margin-top: 5px;
     margin-bottom: 5px;
-    border: 1px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: cornflowerblue;
     width: 98.9%;
+    height: 35px;
+}
+.area{
+    width: 340px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: cornflowerblue;
+}
+#btnEnviar{
+    color: white;
+    height: 30px;
+    width: 98.9%;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: cornflowerblue;
 }
 footer {
     background-color: #FF5733;
