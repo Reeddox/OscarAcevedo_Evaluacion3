@@ -33,3 +33,21 @@ const registrar = () =>{
         alert(a);
     })
 }
+
+//Son las funciones capaces de cambiar el contraste y fuente de la pagina//
+//Contraste//
+const cambiarColor = () => {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("cambiarColor").addEventListener("click", cambiarColor);
+})
+//Fuente//
+const cambiarLetras = () => {
+    var element = document.body;
+    element.classList.toggle("cambiar-fuente");
+}
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("cambiarLetras").addEventListener("click", cambiarLetras);
+})
