@@ -97,7 +97,10 @@ li a:hover{
     border-radius: 4px;
     border-color: cornflowerblue;
 }
-#btnEnviar{
+#btnActualizacion{
+    display: none;
+}
+#btnRegistrar, #btnActualizacion{
     color: white;
     height: 30px;
     width: 98.9%;
