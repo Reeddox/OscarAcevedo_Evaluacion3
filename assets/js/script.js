@@ -164,10 +164,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("cambiarColor").addEventListener("click", cambiarColor);
 })
 //Fuente//
-const cambiarLetras = () => {
+const cambiarTamanioLetras = () => {
     var element = document.body;
-    element.classList.toggle("cambiar-fuente");
+    element.classList.toggle("cambiar-fuenteTamanio");
 }
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("cambiarLetras").addEventListener("click", cambiarLetras);
+    document.getElementById("cambiarLetras").addEventListener("click", cambiarTamanioLetras);
 })

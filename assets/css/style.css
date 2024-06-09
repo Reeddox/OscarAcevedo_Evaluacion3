@@ -1,7 +1,8 @@
 .body{
     background-color: #FCF3F1;
 }
-.cambiar-fuente{
+.cambiar-fuenteTamanio{
+    font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
 }
 .dark-mode{
@@ -108,11 +109,25 @@ li a:hover{
     border-radius: 4px;
     background-color: cornflowerblue;
 }
+table{
+    border: 2px solid;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    padding: 20px;
+    border: 1px solid;
+}
+thead{
+
+    border-bottom: solid 2px;
+}
 footer {
     background-color: #FF5733;
     padding: 10px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .logofooter{
     width: 38px;
