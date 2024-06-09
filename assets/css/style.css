@@ -109,7 +109,7 @@ li a:hover{
     border-radius: 4px;
     background-color: cornflowerblue;
 }
-table{
+#tabla{
     border: 2px solid;
     text-align: left;
     border-collapse: collapse;
@@ -117,11 +117,12 @@ table{
 }
 th, td{
     padding: 20px;
-    border: 1px solid;
 }
 thead{
-
     border-bottom: solid 2px;
+}
+.estilotabla{
+    border: 1px solid;
 }
 footer {
     background-color: #FF5733;

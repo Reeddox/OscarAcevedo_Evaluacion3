@@ -61,7 +61,7 @@ const cargar_datos = () => {
             estructura+="<td>"+Usuarios.personaje.join(', ')+"</td>"; //Agrega una celda con el valor de Usuarios.personaje//El join une el array en una cadena//
             estructura+="<td>"+Usuarios.asunto+"</td>"; //Agrega una celda con el valor de Usuarios.asunto
             estructura+="<td>"+Usuarios.mensaje+"</td>"; //Agrega una celda con el valor de Usuarios.mensaje
-            estructura+="<td><button id= ACT"+Usuarios.id+"> Actualizar </button></td>"; 
+            estructura+="<td><button id= ACT"+Usuarios.id+"> Editar </button></td>"; 
             estructura+="<td><button id= DEL"+Usuarios.id+"> Eliminar </button></td>";
             estructura+="</tr>";
         });
@@ -153,6 +153,7 @@ const actualizar = () => {
         alert(a);
     });
 }
+
 
 //Son las funciones capaces de cambiar el contraste y fuente de la pagina//
 //Contraste//
