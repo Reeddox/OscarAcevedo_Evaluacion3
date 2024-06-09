@@ -7,30 +7,31 @@ window.addEventListener("load", () =>{
 
 const registrar = () =>{
     //Se recuperan los elementos del HTML//
-    let eNombre = document.getElementById("nombre");
-    let eApellido = document.getElementById("apellido");
-    let eEmail = document.getElementById("email");
-    let eFechaN = document.getElementById("fechaNacimiento");
-    let eSexo = document.querySelector('input[name=sexo]:checked');
-    let eTelefono = document.getElementById("telefono");
-    let ePersonaje = [];
+    let eNombre = document.getElementById("nombre"); //Recibe el elemento con el id "nombre"
+    let eApellido = document.getElementById("apellido"); //Recibe el elemento con el id "apellido"
+    let eEmail = document.getElementById("email"); //Recibe el elemento con el id "email"
+    let eFechaN = document.getElementById("fechaNacimiento"); //Recibe el elemento con el id "fechaNacimiento"
+    let eSexo = document.querySelector('input[name=sexo]:checked'); //Recibe el primer elemento input del tipo radio con el nombre "sexo" que esta marcado (checked)
+    let eTelefono = document.getElementById("telefono"); //Recibe el elemento con el id "telefono"
+    let ePersonaje = []; //Se inicia un array vacio
     document.querySelectorAll('input[name=Personaje]:checked').forEach((checkbox) => {
-        ePersonaje.push(checkbox.value);
-    });
-    let eAsunto = document.getElementById("opciones");
-    let eMensaje = document.getElementById("mensaje");
+        ePersonaje.push(checkbox.value); 
+    });//Recibe los elementos input de tipo checkbox con el nombre "Personaje" que estan marcados (checked)
+    let eAsunto = document.getElementById("opciones"); //Recibe el elemento con el id "opciones"
+    let eMensaje = document.getElementById("mensaje"); //Recibe el elemento con el id "mensaje"
     //----------------------------------------------//
 
     //Se recuperan los valores de esos elementos//
-    let nNombre = eNombre.value;
-    let nApellido = eApellido.value;
-    let nEmail = eEmail.value;
-    let nFechaN = eFechaN.value;
-    let nSexo = eSexo.value;
-    let nTelefono = eTelefono.value;
-    let nPersonaje = ePersonaje; //En ePersonaje no va el .value porque los array no tienen esa propiedad//
-    let nAsunto = eAsunto.value;
-    let nMensaje = eMensaje.value;
+    let nNombre = eNombre.value; //Recibe el valor del elemento eNombre
+    let nApellido = eApellido.value; //Recibe el valor del elemento eApellido
+    let nEmail = eEmail.value; //Recibe el valor del elemento eEmail
+    let nFechaN = eFechaN.value; //Recibe el valor del elemento eFechaN
+    let nSexo = eSexo.value; //Recibe el valor del elemento eSexo
+    let nTelefono = eTelefono.value; //Recibe el valor del elemento eTelefono
+    let nPersonaje = ePersonaje; //Asigna el array ePersonaje a la variable nPersonaje
+    //En ePersonaje no va el .value porque los array no tienen esa propiedad
+    let nAsunto = eAsunto.value; //Recibe el valor del elemento eAsunto
+    let nMensaje = eMensaje.value; //Recibe el valor del elemento eMensaje
     //----------------------------------------------//
 
     //Se crea un objeto//
@@ -51,16 +52,16 @@ const cargar_datos = () => {
         let estructura = "";
         Usuarios.forEach((Usuarios) => {
             estructura+="<tr>";
-            estructura+="<td>"+Usuarios.nombre+"</td>";
-            estructura+="<td>"+Usuarios.apellido+"</td>";
-            estructura+="<td>"+Usuarios.email+"</td>";
-            estructura+="<td>"+Usuarios.fecha+"</td>";
-            estructura+="<td>"+Usuarios.sexo+"</td>";
-            estructura+="<td>"+Usuarios.telefono+"</td>";
-            estructura+="<td>"+Usuarios.personaje.join(', ')+"</td>"; //Esto une el array en una cadena//
-            estructura+="<td>"+Usuarios.asunto+"</td>";
-            estructura+="<td>"+Usuarios.mensaje+"</td>";
-            estructura+="<td><button id= ACT"+Usuarios.id+"> Actualizar </button></td>";
+            estructura+="<td>"+Usuarios.nombre+"</td>"; //Agrega una celda con el valor de Usuarios.nombre
+            estructura+="<td>"+Usuarios.apellido+"</td>"; //Agrega una celda con el valor de Usuarios.apellido
+            estructura+="<td>"+Usuarios.email+"</td>"; //Agrega una celda con el valor de Usuarios.email
+            estructura+="<td>"+Usuarios.fecha+"</td>"; //Agrega una celda con el valor de Usuarios.fecha
+            estructura+="<td>"+Usuarios.sexo+"</td>"; //Agrega una celda con el valor de Usuarios.sexo
+            estructura+="<td>"+Usuarios.telefono+"</td>"; //Agrega una celda con el valor de Usuarios.telefono
+            estructura+="<td>"+Usuarios.personaje.join(', ')+"</td>"; //Agrega una celda con el valor de Usuarios.personaje//El join une el array en una cadena//
+            estructura+="<td>"+Usuarios.asunto+"</td>"; //Agrega una celda con el valor de Usuarios.asunto
+            estructura+="<td>"+Usuarios.mensaje+"</td>"; //Agrega una celda con el valor de Usuarios.mensaje
+            estructura+="<td><button id= ACT"+Usuarios.id+"> Actualizar </button></td>"; 
             estructura+="<td><button id= DEL"+Usuarios.id+"> Eliminar </button></td>";
             estructura+="</tr>";
         });
@@ -83,7 +84,7 @@ const cargar_datos = () => {
             let eAsunto = document.getElementById("opciones");
             let eMensaje = document.getElementById("mensaje");
         //-------------------------------------------------------------------------------------------------//
-            //Los valores de los elementos de cargan en los campos del formulario//
+            //Los valores de los elementos en las celdas se cargan en los campos del formulario//
             eNombre.value = Usuarios.nombre;
             eApellido.value = Usuarios.apellido;
             eEmail.value = Usuarios.email;
